@@ -17,7 +17,7 @@ def get_args() -> Namespace:
     parser.add_argument('--epochs', type=int, default=100,
                         help='the maximum epoch.')
     parser.add_argument('--batch_size', type=int, default=64)
-    parser.add_argument('--lr', type=float, default=1e-5,help='learning rate.')
+    parser.add_argument('--lr', type=float, default=1e-5, help='learning rate.')
     parser.add_argument('--eps', type=float, default=1e-5,
                         help='the minimum loss to early stop, if 0, will not early stop.')
     parser.add_argument('--ckpt_interval', type=int, default=20)
@@ -49,7 +49,6 @@ def get_args() -> Namespace:
     else:
         args.ckpt_dir = join(args.log_dir, "checkpoints")
         os.makedirs(args.ckpt_dir, exist_ok=True)
-        os.makedirs(join(args.ckpt_dir, "best_models"), exist_ok=True)
     with open(join(args.log_dir, 'args.txt'), mode='w+') as f:
         print(format_args(args), file=f)
     args.num_classes = SUPPORTED_TASKS[args.task]
