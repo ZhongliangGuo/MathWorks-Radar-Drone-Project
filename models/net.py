@@ -17,6 +17,7 @@ def get_model(arch, num_classes, use_pretrained=True) -> nn.Module:
                                              bias=model.classifier[-1].bias is not None)
         else:
             raise NotImplemented
+        print(f"loaded the pretrained weights for {arch}")
     else:
         model = eval(f"tv_models.{arch}(num_classes={num_classes})")
     return model
