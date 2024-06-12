@@ -12,19 +12,23 @@ output_dir = './logs'
 epochs = 100
 batch_size = 64
 lr = 1e-5
+eps = 1e-5
 random_seed = 3407
 ckpt_interval = 20
-
+num_workers = 8
 bash_list = []
 for arch in IMPLEMENTED_NETS:
     template = (
         f"python {py_path} \\\n"
         f"  --task {'binary'} \\\n"
         f"  --arch {arch} \\\n"
+        f"  --use_pretrained \\\n"
         f"  --epochs {epochs} \\\n"
-        f"  --ckpt_interval {ckpt_interval} \\\n"
         f"  --batch_size {batch_size} \\\n"
         f"  --lr {lr} \\\n"
+        f"  --eps {eps} \\\n"
+        f"  --ckpt_interval {ckpt_interval} \\\n"
+        f"  --num_workers {num_workers} \\\n"
         f"  --random_seed {random_seed} \\\n"
         f"  --data_root {data_root} \\\n"
         f"  --train_label_path {train_label_path} \\\n"

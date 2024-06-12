@@ -1,9 +1,13 @@
 python train.py \
   --task drone-classification \
   --arch resnet18 \
+  --use_pretrained \
   --epochs 100 \
   --batch_size 64 \
   --lr 1e-5 \
+  --eps 1e-5 \
+  --ckpt_interval 20 \
+  --num_workers 8 \
   --random_seed 3407 \
   --train_label_path /home/zg34/datasets/drone_project/train_label.csv \
   --eval_label_path /home/zg34/datasets/drone_project/eval_label.csv \

@@ -12,7 +12,7 @@ def get_args() -> Namespace:
                         help='indicate which task you are willing to train.')
     parser.add_argument('--arch', type=str, choices=IMPLEMENTED_NETS, default=IMPLEMENTED_NETS[0],
                         help='indicate which neural network architecture you want to use.')
-    parser.add_argument('--use_pretrained', action='store_false',
+    parser.add_argument('--use_pretrained', action='store_true',
                         help='indicate if use the imagenet pretrained weights.')
     parser.add_argument('--epochs', type=int, default=100,
                         help='the maximum epoch.')
