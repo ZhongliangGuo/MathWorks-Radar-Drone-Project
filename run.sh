@@ -1,4 +1,5 @@
 python train.py \
+  --task drone-classification \
   --arch resnet18 \
   --epochs 100 \
   --batch_size 64 \

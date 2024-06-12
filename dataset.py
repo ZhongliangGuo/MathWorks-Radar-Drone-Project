@@ -51,7 +51,8 @@ class DroneBinaryDataset(Dataset):
             raise NotImplemented
 
 
-def get_loader(label_path, data_root, task, img_tf=None, batch_size=64, shuffle=True, drop_last=True) -> DataLoader:
+def get_loader(label_path, data_root, task, img_tf=None, batch_size=64, shuffle=True, drop_last=True,
+               num_workers=8) -> DataLoader:
     dataset = DroneBinaryDataset(label_path, data_root, task, img_tf)
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, drop_last=drop_last)
+    loader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, drop_last=drop_last, num_workers=num_workers)
     return loader

@@ -33,8 +33,10 @@ def train(net, loss_fn, optimizer, loader, writer, epoch, args):
             f"loss: {loss_his[-1]:.4f}, acc: {pred_corrects / total:.2%}, best_eval_acc:{args.top_acc:.2%}")
         writer.add_scalar('iter_loss', loss_his[-1], global_step=batch_idx + 1 + len(loader) * epoch)
     pbar.close()
-    writer.add_scalar('avg_epoch_loss', sum(loss_his) / len(loss_his), global_step=epoch)
+    avg_loss = sum(loss_his) / len(loss_his)
+    writer.add_scalar('avg_epoch_loss', avg_loss, global_step=epoch)
     writer.add_scalar('train_epoch_acc', pred_corrects / total, global_step=epoch)
+    return avg_loss
 
 
 @torch.no_grad()
@@ -65,27 +67,28 @@ def main():
     train_dataloader = get_loader(label_path=args.train_label_path,
                                   data_root=args.data_root,
                                   task=args.task,
-                                  batch_size=args.batch_size)
+                                  batch_size=args.batch_size,
+                                  num_workers=args.num_workers)
     eval_dataloader = get_loader(label_path=args.eval_label_path,
                                  data_root=args.data_root,
                                  task=args.task,
-                                 batch_size=args.batch_size)
+                                 batch_size=args.batch_size,
+                                 num_workers=args.num_workers)
     optimizer = torch.optim.Adam(net.parameters(), lr=args.lr)
     loss_fn = nn.CrossEntropyLoss()
     writer = SummaryWriter(logdir=args.log_dir)
     args.top_acc = 0
     best_acc_path = None
     for epoch in range(1, args.epochs + 1):
-        train(net=net, loss_fn=loss_fn, optimizer=optimizer, loader=train_dataloader,
-              writer=writer, epoch=epoch, args=args)
-
+        avg_train_loss = train(net=net, loss_fn=loss_fn, optimizer=optimizer, loader=train_dataloader,
+                               writer=writer, epoch=epoch, args=args)
         acc = evaluate(net=net, loader=eval_dataloader, writer=writer, epoch=epoch, args=args)
         if acc > args.top_acc:
             args.top_acc = acc
             if args.ckpt_dir:
                 if best_acc_path is not None:
                     os.remove(best_acc_path)
-                best_acc_path = join(args.ckpt_dir, "best_models", f"{args.arch}_epoch-{epoch}_acc-{acc * 100:.2f}.pth")
+                best_acc_path = join(args.log_dir, f"best-{args.arch}_epoch-{epoch}_acc-{acc * 100:.2f}.pth")
                 torch.save(net.state_dict(), best_acc_path)
         if epoch % args.ckpt_interval == 0:
             if args.ckpt_dir:
@@ -94,6 +97,10 @@ def main():
                     'optimizer': optimizer.state_dict(),
                 }
                 torch.save(to_save, join(args.ckpt_dir, f"{args.arch}_epoch-{epoch}_acc-{acc * 100:.2f}.ckpt"))
+        if avg_train_loss <= args.eps:
+            print(f'Training early stop at epoch {epoch}, '
+                  f'because the average epoch loss {avg_train_loss} ≤ {args.eps}.')
+            break
     print(f"Finished training, the best accuracy is {args.top_acc}.")
 
 
