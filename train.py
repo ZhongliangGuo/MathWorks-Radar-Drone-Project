@@ -74,17 +74,16 @@ def main():
     loss_fn = nn.CrossEntropyLoss()
     writer = SummaryWriter(logdir=args.log_dir)
     args.top_acc = 0
+    best_acc_path = None
     for epoch in range(1, args.epochs + 1):
         train(net=net, loss_fn=loss_fn, optimizer=optimizer, loader=train_dataloader,
               writer=writer, epoch=epoch, args=args)
 
         acc = evaluate(net=net, loader=eval_dataloader, writer=writer, epoch=epoch, args=args)
-
-        best_acc_path = ''
         if acc > args.top_acc:
             args.top_acc = acc
             if args.ckpt_dir:
-                if best_acc_path != '':
+                if best_acc_path is not None:
                     os.remove(best_acc_path)
                 best_acc_path = join(args.ckpt_dir, "best_models", f"{args.arch}_epoch-{epoch}_acc-{acc * 100:.2f}.pth")
                 torch.save(net.state_dict(), best_acc_path)
