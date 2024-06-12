@@ -2,3 +2,4 @@ logs/
 bash/
 *.txt
 __pycache__/
+.idea/
