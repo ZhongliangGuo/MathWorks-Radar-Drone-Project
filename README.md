@@ -41,7 +41,19 @@ For more details, please run
 python train.py --help
 ```
 
+#### How to see the real-time training curve
+
+1. change the directory to the `output_dir`
+
+2. run the following bash
+   ```bash
+   tensorboard --logdir=./
+   ```
+
+   please make sure you've already installed the library `tensorboard`, if not , just run `pip install tensorboard`.
+
 ### Inference
+
 ```bash
 python inference.py \
   --task binary \
