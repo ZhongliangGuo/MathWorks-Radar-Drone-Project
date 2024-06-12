@@ -101,7 +101,7 @@ def main():
             print(f'Training early stop at epoch {epoch}, '
                   f'because the average epoch loss {avg_train_loss} ≤ {args.eps}.')
             break
-    print(f"Finished training, the best accuracy is {args.top_acc}.")
+    print(f"Finished training, the best accuracy is {args.top_acc:.2%}.")
 
 
 if __name__ == "__main__":
