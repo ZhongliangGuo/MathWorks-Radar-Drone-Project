@@ -73,7 +73,9 @@ def main():
                                  data_root=args.data_root,
                                  task=args.task,
                                  batch_size=args.batch_size,
-                                 num_workers=args.num_workers)
+                                 num_workers=args.num_workers,
+                                 shuffle=False,
+                                 drop_last=False)
     optimizer = torch.optim.Adam(net.parameters(), lr=args.lr)
     loss_fn = nn.CrossEntropyLoss()
     writer = SummaryWriter(logdir=args.log_dir)

@@ -67,12 +67,42 @@ Download the dataset by clicking [here](https://universityofstandrews907-my.shar
 
 ## Results
 
+trained on the machine with
+
+- OS: `Ubuntu 20.04.6 LTS`
+- GPU: `NVIDIA A100-SXM4-80GB`
+- CPU: `AMD EPYC 7713 64-Core Processor`
+
+### Accuracy
+
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
-| binary               | 99.76%  | 99.92%        | 99.96%        | 99.88%           | 99.84%           | 99.80%   | 99.68%   | 99.68%    |
-| drone-classification | 98.44%  | 99.36%        | 99.45%        | 98.16%           | 98.71%           | 98.44%   | 97.33%   | 97.89%    |
+| binary               | 99.76%  | 99.92%        | **99.96%**    | 99.88%           | 99.84%           | 99.80%   | 99.68%   | 99.68%    |
+| drone-classification | 98.44%  | 99.36%        | **99.45%**    | 98.16%           | 98.71%           | 98.44%   | 97.33%   | 97.89%    |
 
 It's worth noting that all above models used the ImageNet-1K pre-trained weights.
+
+### Runtime (in second)
+
+OS: `Ubuntu 22.04.4 LTS`
+
+#### GPU
+
+tested on `NVIDIA RTX3060 12G`
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 0.0059  | 0.0128        | 0.0094        | 0.0279           | 0.0217           | 0.0078   | 0.0102   | 0.0114    |
+| drone-classification | 0.0062  | 0.0144        | 0.0103        | 0.0289           | 0.0218           | 0.0077   | 0.0109   | 0.0109    |
+
+#### CPU
+
+tested on `Intel i5-11400`
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 0.0154  | 0.1149        | 0.0451        | 0.0874           | 0.0537           | 0.0207   | 0.0440   | 0.0519    |
+| drone-classification | 0.0164  | 0.1227        | 0.0443        | 0.0889           | 0.0525           | 0.0220   | 0.0459   | 0.0490    |
 
 ## Environment
 
