@@ -58,8 +58,8 @@ def get_loader(label_path, data_root, task, img_tf=None, batch_size=64, shuffle=
     return loader
 
 
-def get_eval_time_loader(label_path, data_root, task, img_tf=None, num=100):
+def get_eval_time_loader(label_path, data_root, task, img_tf=None, num=100,shuffle=False):
     dataset = DroneBinaryDataset(label_path, data_root, task, img_tf)
     dataset = Subset(dataset, range(num))
-    loader = DataLoader(dataset, batch_size=1, shuffle=False, drop_last=False)
+    loader = DataLoader(dataset, batch_size=1, shuffle=shuffle, drop_last=False)
     return loader
