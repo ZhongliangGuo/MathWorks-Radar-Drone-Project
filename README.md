@@ -65,18 +65,28 @@ python inference.py \
 
 Download the dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/ESGPaToyidtHgWNjdL_l-JgB9TKvEYKxzW4JEOiuFAcFZQ?e=duo8iS). The password is `mathworks2024`.
 
+## Results
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 99.76%  | 99.92%        | 99.96%        | 99.88%           | 99.84%           | 99.80%   | 99.68%   | 99.68%    |
+| drone-classification | 98.44%  | 99.36%        | 99.45%        | 98.16%           | 98.71%           | 98.44%   | 97.33%   | 97.89%    |
+
+It's worth noting that all above models used the ImageNet-1K pre-trained weights.
+
 ## Environment
 
-This project requires a Python3 environment with the following libraries:
+This project requires the Python3 environment with the following libraries:
 ```text
-tqdm==4.66.1
-pandas==2.0.3
-Pillow==9.4.0
-torch==2.1.1
-torchvision==0.16.1
+pandas==1.5.2
+Pillow==9.2.0
 tensorboardX==2.6.2.2
+torch==2.0.0
+torchvision==0.15.1
+tqdm==4.65.0
 ```
-# Reference
+## Reference
+
 1. Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[J]. Advances in neural information processing systems, 2012, 25.
 2. He K, Zhang X, Ren S, et al. Deep residual learning for image recognition[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 770-778.
 3. Xie S, Girshick R, Dollár P, et al. Aggregated residual transformations for deep neural networks[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2017: 1492-1500.
