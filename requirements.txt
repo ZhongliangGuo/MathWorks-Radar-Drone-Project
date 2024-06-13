@@ -1,0 +1,8 @@
+pandas==1.5.2
+Pillow==9.2.0
+Pillow==10.3.0
+tensorboardX==2.6.2.2
+tensorboardX==2.6.2.2
+torch==2.0.0
+torchvision==0.15.1
+tqdm==4.65.0
