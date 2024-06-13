@@ -61,7 +61,12 @@ python inference.py \
   --image_path /.../XXX.png \
   --pth_path /.../XXX.pth
 ```
+## Dataset
+
+Download the dataset by clicking [here]([drone_project.zip](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/ESGPaToyidtHgWNjdL_l-JgB9TKvEYKxzW4JEOiuFAcFZQ?e=duo8iS)). The password is `mathworks2024`.
+
 ## Environment
+
 This project requires a Python3 environment with the following libraries:
 ```text
 tqdm==4.66.1
