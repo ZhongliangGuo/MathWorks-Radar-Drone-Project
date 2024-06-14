@@ -85,7 +85,7 @@ def main():
         avg_train_loss = train(net=net, loss_fn=loss_fn, optimizer=optimizer, loader=train_dataloader,
                                writer=writer, epoch=epoch, args=args)
         acc = evaluate(net=net, loader=eval_dataloader, writer=writer, epoch=epoch, args=args)
-        if acc > args.top_acc:
+        if acc >= args.top_acc:
             args.top_acc = acc
             if args.ckpt_dir:
                 if best_acc_path is not None:
