@@ -78,7 +78,7 @@ trained on the machine with
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
 | binary               | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%      |
-| drone-classification | 98.8%   | 99.4%         | 98.56%        | 96.03%           | 98.68%           | 96.03%   | 95.31%   | 97.36%    |
+| drone-classification | 97.60%  | 99.02%        | 98.91%        | 96.73%           | 98.04%           | 96.29%   | 94.66%   | 96.84%    |
 
 It's worth noting that all above models used the ImageNet-1K pre-trained weights.
 
@@ -115,6 +115,8 @@ torch==2.0.0
 torchvision==0.15.1
 tqdm==4.65.0
 ```
+The docker image that contains the environment I used for this project is available [here](https://hub.docker.com/r/zhongliangguo/custom_torch_image).
+
 ## Reference
 
 1. Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[J]. Advances in neural information processing systems, 2012, 25.
