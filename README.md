@@ -77,8 +77,8 @@ trained on the machine with
 
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
-| binary               | 99.76%  | 99.92%        | **99.96%**    | 99.88%           | 99.84%           | 99.80%   | 99.68%   | 99.68%    |
-| drone-classification | 98.44%  | 99.36%        | **99.45%**    | 98.16%           | 98.71%           | 98.44%   | 97.33%   | 97.89%    |
+| binary               | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%      |
+| drone-classification | 98.8%   | 99.4%         | 98.56%        | 96.03%           | 98.68%           | 96.03%   | 95.31%   | 97.36%    |
 
 It's worth noting that all above models used the ImageNet-1K pre-trained weights.
 
