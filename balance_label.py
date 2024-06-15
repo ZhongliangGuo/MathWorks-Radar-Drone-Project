@@ -11,7 +11,7 @@ drone_candidates = [
     # 94GHz
     '2024-03-01_09-33-05_94GHz',  # DJI Mavic 3
     '2024-03-01_09-51-34_94GHz',  # DJI Mini 2
-    '2024-03-01_10-14-24_94Ghz',  # Autel Evo II
+    '2024-03-01_10-14-24_94GHz',  # Autel Evo II
     '2024-03-01_10-46-33_94GHz',  # Yuneec H520E
     '2024-03-01_11-07-57_94GHz',  # DJI Matrice 210
     # 207GHz
