@@ -1,0 +1,1 @@
+Download the `.pt` file by clicking this [link](https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project/releases/tag/pretrained-weights-MATLAB)
