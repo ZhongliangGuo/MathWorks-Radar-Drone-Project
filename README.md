@@ -20,7 +20,10 @@ It can achieve different tasks:
 2. different drone type classification, including `Autel_Evo_II`, `DJI_Matrice_210`, `DJI_Mavic_3`, `DJI_Mini_2`, and `Yuneec_H520E`.
 
 ## Usage
+You can run the python script in MATLAB by the [instruction](https://ch.mathworks.com/products/matlab/matlab-and-python.html).
+
 ### Train
+
 a simple usage for training a neural networks.
 ```bash
 python train.py \
