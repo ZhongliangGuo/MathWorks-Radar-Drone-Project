@@ -1,5 +1,5 @@
 python train.py \
-  --task drone-classification \
+  --task four-class \
   --arch resnet18 \
   --use_pretrained \
   --epochs 100 \
@@ -9,6 +9,6 @@ python train.py \
   --ckpt_interval 20 \
   --num_workers 8 \
   --random_seed 3407 \
-  --train_label_path /home/zg34/datasets/drone_project/train_label.csv \
-  --eval_label_path /home/zg34/datasets/drone_project/eval_label.csv \
+  --train_label_path /home/zg34/datasets/drone_project/train_4cls.csv \
+  --eval_label_path /home/zg34/datasets/drone_project/eval_4cls.csv \
   --data_root /home/zg34/datasets/drone_project/data

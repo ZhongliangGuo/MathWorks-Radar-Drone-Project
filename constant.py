@@ -17,9 +17,17 @@ DRONE_CLASS_INDEX = {
     'Yuneec_H520E': 4,
 }
 
+FOUR_CLASS_INDEX = {
+    'drone': 0,
+    'bird': 1,
+    'cluster': 2,
+    'noise': 3,
+}
+
 SUPPORTED_TASKS = {
     'binary': 2,
     'drone-classification': len(DRONE_CLASS_INDEX),
+    'four-class': len(FOUR_CLASS_INDEX),
 }
 
 NUM_TO_CLASS_BINARY = {
@@ -29,4 +37,8 @@ NUM_TO_CLASS_BINARY = {
 
 NUM_TO_CLASS_DRONES = {
     DRONE_CLASS_INDEX[key]: key for key in DRONE_CLASS_INDEX.keys()
+}
+
+NUM_TO_FOUR_CLASS = {
+    FOUR_CLASS_INDEX[key]: key for key in FOUR_CLASS_INDEX.keys()
 }

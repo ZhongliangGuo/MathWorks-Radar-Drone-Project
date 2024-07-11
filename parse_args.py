@@ -30,9 +30,9 @@ def get_args() -> Namespace:
                              'as deep learning is regarded as a kind of alchemy in China)')
     parser.add_argument('--data_root', type=str, default='/home/zg34/datasets/drone_project/data',
                         help='path to the folder that contains "24GHz", "94GHz", and "207GHz" folders.')
-    parser.add_argument('--train_label_path', type=str, default='/home/zg34/datasets/drone_project/train_label.csv',
+    parser.add_argument('--train_label_path', type=str, default='/home/zg34/datasets/drone_project/train_binary.csv',
                         help="path to the train_label.csv.")
-    parser.add_argument('--eval_label_path', type=str, default='/home/zg34/datasets/drone_project/eval_label.csv',
+    parser.add_argument('--eval_label_path', type=str, default='/home/zg34/datasets/drone_project/eval_binary.csv',
                         help="path to the eval_label.csv")
     parser.add_argument('--output_dir', type=str, default='./logs',
                         help='the folder that will store the logs.')
