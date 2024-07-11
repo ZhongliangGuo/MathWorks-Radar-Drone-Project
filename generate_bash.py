@@ -2,25 +2,26 @@ import os
 from os.path import join
 from constant import IMPLEMENTED_NETS
 
-bash_save_path = r'./bash/arch'
+task = 'four-class'
+bash_save_path = f'./bash/{task}'
 os.makedirs(bash_save_path, exist_ok=True)
-py_path = '/workspace/DroneClassificationNet/train.py'
+py_path = '/workspace/drone/train.py'
 data_root = '/workspace/datasets/drone_project/data'
-train_label_path = '/workspace/datasets/drone_project/train_label.csv'
-eval_label_path = '/workspace/datasets/drone_project/eval_label.csv'
+train_label_path = '/workspace/datasets/drone_project/train_4cls.csv'
+eval_label_path = '/workspace/datasets/drone_project/eval_4cls.csv'
 output_dir = './logs'
-epochs = 100
+epochs = 20
 batch_size = 64
 lr = 1e-5
-eps = 1e-5
+eps = 1e-4
 random_seed = 3407
 ckpt_interval = 20
-num_workers = 8
+num_workers = 16
 bash_list = []
 for arch in IMPLEMENTED_NETS:
     template = (
         f"python {py_path} \\\n"
-        f"  --task {'binary'} \\\n"
+        f"  --task {task} \\\n"
         f"  --arch {arch} \\\n"
         f"  --use_pretrained \\\n"
         f"  --epochs {epochs} \\\n"
@@ -39,4 +40,4 @@ for arch in IMPLEMENTED_NETS:
         print(template, file=f)
     bash_list.append(f'{arch}.sh')
 with open(join(bash_save_path, f'run_me.sh'), mode='w+') as f:
-    print('\n'.join(f"bash {sub}" for sub in bash_list), file=f)
+    print('\n'.join(f"bash {join(bash_save_path, sub)}" for sub in bash_list), file=f)
