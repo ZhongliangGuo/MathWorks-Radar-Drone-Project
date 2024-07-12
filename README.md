@@ -18,6 +18,7 @@ IMPLEMENTED_NETS = (
 It can achieve different tasks:
 1. binary classification for `drone` and `non-drone`.
 2. different drone type classification, including `Autel_Evo_II`, `DJI_Matrice_210`, `DJI_Mavic_3`, `DJI_Mini_2`, and `Yuneec_H520E`.
+3. quadruple classification, including `drone`, `bird`, `cluster`, and `noise`.
 
 ## Usage
 You can run the python script in MATLAB by the [instruction](https://ch.mathworks.com/products/matlab/matlab-and-python.html).
@@ -35,8 +36,8 @@ python train.py \
   --lr 1e-05 \
   --random_seed 3407 \
   --data_root /.../data \
-  --train_label_path /.../train_label.csv \
-  --eval_label_path /.../eval_label.csv \
+  --train_label_path /.../train_binary.csv \
+  --eval_label_path /.../eval_binary.csv \
   --output_dir ./logs
 ```
 For more details, please run
