@@ -1,10 +1,11 @@
 classdef ClassificationNet<handle
     properties (Constant)
-        supported_task={'binary' 'drone-classification'};
+        supported_task={'binary' 'drone-classification' 'four-class'};
         supported_arch={'resnet18' 'resnet50' 'efficientnet_v2_s' 'efficientnet_v2_m' 'resnext50_32x4d' 'alexnet'}; %'convnext_tiny' 'convnext_base'
         input_size=[224 224 3];
         num2class_binary = dictionary([1, 2],{'non-drone', 'drone'});
         num2class_drone_classification = dictionary([1, 2, 3, 4, 5], {'Autel_Evo_II' 'DJI_Matrice_210' 'DJI_Mavic_3' 'DJI_Mini_2' 'Yuneec_H520E'});
+        num2class_four_class = dictionary([1, 2, 3, 4], {'drone' 'bird' 'cluster' 'noise'});
     end
     properties (SetAccess=private)
         net;
@@ -34,6 +35,8 @@ classdef ClassificationNet<handle
                 class_label = obj.num2class_binary(label_ind);
             elseif strcmp(obj.task, 'drone-classification')
                 class_label = obj.num2class_drone_classification(label_ind);
+            elseif strcmp(obj.task, 'four-class')
+                class_label = obj.num2class_four_class(label_ind);
             else
                 error('Not supported');
             end
