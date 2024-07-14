@@ -4,5 +4,4 @@ bash/
 __pycache__/
 .idea/
 */__pycache__/
-*.ipynb
-pynb/
+pynb/figs
