@@ -3,7 +3,7 @@ from PIL import Image
 from models.net import get_model
 from argparse import ArgumentParser
 from dataset import get_default_img_tf
-from constant import SUPPORTED_TASKS, NUM_TO_CLASS_BINARY, NUM_TO_CLASS_DRONES, IMPLEMENTED_NETS
+from constant import SUPPORTED_TASKS, NUM_TO_CLASS_BINARY, NUM_TO_CLASS_DRONES, NUM_TO_FOUR_CLASS, IMPLEMENTED_NETS
 
 
 def predict_a_image(net: torch.nn.Module, task: str, image: torch.Tensor):
@@ -13,6 +13,8 @@ def predict_a_image(net: torch.nn.Module, task: str, image: torch.Tensor):
         return NUM_TO_CLASS_BINARY[pred_cls.item()]
     elif task == 'drone-classification':
         return NUM_TO_CLASS_DRONES[pred_cls.item()]
+    elif task == 'four-class':
+        return NUM_TO_FOUR_CLASS[pred_cls.item()]
     else:
         raise NotImplemented
 
