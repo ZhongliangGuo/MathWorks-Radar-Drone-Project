@@ -115,15 +115,15 @@ tested on `Intel i5-11400`
 
 #### binary
 
-![binary_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\binary_gardCAM.png)
+![binary_gardCAM](./readme_res/binary_gardCAM.png)
 
 #### drone-classification
 
-![drone-classification_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\drone-classification_gardCAM.png)
+![drone-classification_gardCAM](./readme_res/drone-classification_gardCAM.png)
 
 #### four-class
 
-![four-class_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\four-class_gardCAM.png)
+![four-class_gardCAM](./readme_res/four-class_gardCAM.png)
 
 ## Environment
 
