@@ -111,6 +111,20 @@ tested on `Intel i5-11400`
 | drone-classification | 0.0164  | 0.1227        | 0.0443        | 0.0889           | 0.0525           | 0.0220   | 0.0459   | 0.0490    |
 | four-class           | 0.0155  | 0.1139        | 0.0441        | 0.0864           | 0.0530           | 0.0204   | 0.0441   | 0.0486    |
 
+### Grad-CAM Visualization
+
+#### binary
+
+![binary_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\binary_gardCAM.png)
+
+#### drone-classification
+
+![drone-classification_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\drone-classification_gardCAM.png)
+
+#### four-class
+
+![four-class_gardCAM](E:\Users\Zhongliang\Desktop\MathWorks-Radar-Drone-Project\readme_res\four-class_gardCAM.png)
+
 ## Environment
 
 This project requires the Python3 environment with the following libraries:
