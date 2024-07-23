@@ -18,7 +18,7 @@ IMPLEMENTED_NETS = (
 It can achieve different tasks:
 1. binary classification for `drone` and `non-drone`.
 2. different drone type classification, including `Autel_Evo_II`, `DJI_Matrice_210`, `DJI_Mavic_3`, `DJI_Mini_2`, and `Yuneec_H520E`.
-3. quadruple classification, including `drone`, `bird`, `cluster`, and `noise`.
+3. quadruple classification, including `drone`, `bird`, `clutter`, and `noise`.
 
 ## Usage
 You can run the python script in MATLAB by the [instruction](https://ch.mathworks.com/products/matlab/matlab-and-python.html).

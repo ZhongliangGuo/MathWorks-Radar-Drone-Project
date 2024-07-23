@@ -5,7 +5,7 @@ classdef ClassificationNet<handle
         input_size=[224 224 3];
         num2class_binary = dictionary([1, 2],{'non-drone', 'drone'});
         num2class_drone_classification = dictionary([1, 2, 3, 4, 5], {'Autel_Evo_II' 'DJI_Matrice_210' 'DJI_Mavic_3' 'DJI_Mini_2' 'Yuneec_H520E'});
-        num2class_four_class = dictionary([1, 2, 3, 4], {'drone' 'bird' 'cluster' 'noise'});
+        num2class_four_class = dictionary([1, 2, 3, 4], {'drone' 'bird' 'clutter' 'noise'});
     end
     properties (SetAccess=private)
         net;

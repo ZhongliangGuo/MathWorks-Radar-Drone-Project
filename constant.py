@@ -20,7 +20,7 @@ DRONE_CLASS_INDEX = {
 FOUR_CLASS_INDEX = {
     'drone': 0,
     'bird': 1,
-    'cluster': 2,
+    'clutter': 2,
     'noise': 3,
 }
 
