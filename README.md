@@ -77,7 +77,7 @@ trained on the machine with
 - GPU: `NVIDIA A100-SXM4-80GB`
 - CPU: `AMD EPYC 7713 64-Core Processor`
 
-### Accuracy
+### Accuracy with pt (20 epochs)
 
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
@@ -86,6 +86,15 @@ trained on the machine with
 | four-class           | 94.29%  | 92.09%        | 91.43%        | 99.34%           | 97.36%           | 94.73%   | 93.63%   | 91.43%    |
 
 It's worth noting that all above models used the ImageNet-1K pre-trained weights.
+
+### Accuracy without pt (20 epochs)
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 99.95%  | 97.72%        | 98.14%        | 98.51%           | 99.63%           | 100%     | 99.86%   | 99.91%    |
+| drone-classification | 91.28%  | 67.50%        | 69.36%        | 33.48%           | 47.98%           | 94.77%   | 80.04%   | 77.86%    |
+| four-class           | 88.79%  | 83.30%        | 79.56%        | 69.23%           | 79.12%           | 87.25%   | 77.80%   | 82.42%    |
+
 
 ### Runtime (in second)
 
