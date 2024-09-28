@@ -124,15 +124,33 @@ tested on `Intel i5-11400`
 
 #### binary
 
-![binary_gardCAM](./readme_res/binary_gardCAM.png)
+##### with pt
+
+![binary_gardCAM](readme_res/with-pt/binary_gardCAM.png)
+
+##### without pt
+
+![binary_gardCAM](readme_res/without-pt/binary_gardCAM.png)
 
 #### drone-classification
 
-![drone-classification_gardCAM](./readme_res/drone-classification_gardCAM.png)
+##### with pt
+
+![drone-classification_gardCAM](readme_res/with-pt/drone-classification_gardCAM.png)
+
+##### without pt
+
+![drone-classification_gardCAM](readme_res/without-pt/drone-classification_gardCAM.png)
 
 #### four-class
 
-![four-class_gardCAM](./readme_res/four-class_gardCAM.png)
+##### with pt
+
+![four-class_gardCAM](readme_res/with-pt/four-class_gardCAM.png)
+
+##### without pt
+
+![four-class_gardCAM](readme_res/without-pt/four-class_gardCAM.png)
 
 ## Environment
 
