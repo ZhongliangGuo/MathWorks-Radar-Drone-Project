@@ -124,33 +124,45 @@ tested on `Intel i5-11400`
 
 #### binary
 
-##### with pt
+##### with pt 20 epochs
 
-![binary_gardCAM](readme_res/with-pt/binary_gardCAM.png)
+![binary_gradCAM](readme_res/with-pt/binary_gradCAM.png)
 
-##### without pt
+##### without pt 20 epochs
 
-![binary_gardCAM](readme_res/without-pt/binary_gardCAM.png)
+![binary_gradCAM](readme_res/without-pt/binary_gradCAM.png)
+
+##### without pt 100 epochs
+
+![binary_gradCAM](readme_res/without-pt-100/binary_gradCAM.png)
 
 #### drone-classification
 
-##### with pt
+##### with pt 20 epochs
 
-![drone-classification_gardCAM](readme_res/with-pt/drone-classification_gardCAM.png)
+![drone-classification_gradCAM](readme_res/with-pt/drone-classification_gradCAM.png)
 
-##### without pt
+##### without pt 20 epochs
 
-![drone-classification_gardCAM](readme_res/without-pt/drone-classification_gardCAM.png)
+![drone-classification_gradCAM](readme_res/without-pt/drone-classification_gradCAM.png)
+
+##### without pt 100 epochs
+
+![drone-classification_gradCAM](readme_res/without-pt-100/drone-classification_gradCAM.png)
 
 #### four-class
 
-##### with pt
+##### with pt 20 epochs
 
-![four-class_gardCAM](readme_res/with-pt/four-class_gardCAM.png)
+![four-class_gradCAM](readme_res/with-pt/four-class_gradCAM.png)
 
-##### without pt
+##### without pt 20 epochs
 
-![four-class_gardCAM](readme_res/without-pt/four-class_gardCAM.png)
+![four-class_gradCAM](readme_res/without-pt/four-class_gradCAM.png)
+
+##### without pt 100 epochs
+
+![four-class_gradCAM](readme_res/without-pt-100/four-class_gradCAM.png)
 
 ## Environment
 
