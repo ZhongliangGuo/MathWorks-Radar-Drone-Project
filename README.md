@@ -89,11 +89,23 @@ trained on the machine with
 
 #### Simulated dataset
 
+bird
 
+|            | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary     | 100%    | 100%          | 95%           | 99%              | 94%              | 97%      | 73%      | 94%       |
+| four-class | 81%     | 77%           | 48%           | 59%              | 50%              | 58%      | 22%      | 65%       |
 
-It's worth noting that all above models used the ImageNet-1K pre-trained weights.
+drone
+
+|            | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary     | 81%     | 47%           | 73%           | 38%              | 5%               | 88%      | 59%      | 75%       |
+| four-class | 73%     | 92%           | 77%           | 78%              | 84%              | 45%      | 84%      | 91%       |
 
 ### Accuracy without pt (20 epochs)
+
+#### Real dataset
 
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
@@ -101,13 +113,47 @@ It's worth noting that all above models used the ImageNet-1K pre-trained weights
 | drone-classification | 91.28%  | 67.50%        | 69.36%        | 33.48%           | 47.98%           | 94.77%   | 80.04%   | 77.86%    |
 | four-class           | 88.79%  | 83.30%        | 79.56%        | 69.23%           | 79.12%           | 87.25%   | 77.80%   | 82.42%    |
 
+#### Simulated dataset
+
+bird
+
+| Task       | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| Binary     | 99%     | 93%           | 97%           | 99%              | 94%              | 100%     | 100%     | 100%            |
+| Four-class | 29%     | 63%           | 68%           | 62%              | 100%             | 93%      | 100%     | 100%            |
+
+drone
+
+| Task       | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| Binary     | 50%     | 67%           | 69%           | 52%              | 34%              | 18%      | 45%      | 32%             |
+| Four-class | 21%     | 30%           | 25%           | 39%              | 21%              | 20%      | 21%      | 21%             |
+
 ### Accuracy without pt (100 epochs)
+
+#### Real dataset
 
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
 | binary               | 100%    | 99.86%        | 99.77%        | 100%             | 100%             | 100%     | 100%     | 100%      |
 | drone-classification | 98.8%   | 93.46%        | 94.44%        | 95.20%           | 92.80%           | 97.60%   | 90.73%   | 88.11%    |
 | four-class           | 98.02%  | 87.03%        | 86.59%        | 84.62%           | 85.05%           | 91.21%   | 83.96%   | 86.37%    |
+
+#### Simulated dataset
+
+bird
+
+|            | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary     | 93%     | 98%           | 100%          | 100%             | 98%              | 100%     | 100%     | 100%      |
+| four-class | 58%     | 78%           | 68%           | 94%              | 99%              | 91%      | 100%     | 100%      |
+
+drone
+
+|            | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary     | 68%     | 70%           | 92%           | 65%              | 87%              | 22%      | 21%      | 52%       |
+| four-class | 23%     | 24%           | 17%           | 42%              | 51%              | 36%      | 16%      | 18%       |
 
 ### Runtime (in second)
 
