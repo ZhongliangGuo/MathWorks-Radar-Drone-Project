@@ -79,11 +79,17 @@ trained on the machine with
 
 ### Accuracy with pt (20 epochs)
 
+#### Real dataset
+
 | task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
 | -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
 | binary               | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%      |
 | drone-classification | 97.60%  | 99.02%        | 98.91%        | 96.73%           | 98.04%           | 96.29%   | 94.66%   | 96.84%    |
 | four-class           | 94.29%  | 92.09%        | 91.43%        | 99.34%           | 97.36%           | 94.73%   | 93.63%   | 91.43%    |
+
+#### Simulated dataset
+
+
 
 It's worth noting that all above models used the ImageNet-1K pre-trained weights.
 
