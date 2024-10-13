@@ -95,6 +95,13 @@ It's worth noting that all above models used the ImageNet-1K pre-trained weights
 | drone-classification | 91.28%  | 67.50%        | 69.36%        | 33.48%           | 47.98%           | 94.77%   | 80.04%   | 77.86%    |
 | four-class           | 88.79%  | 83.30%        | 79.56%        | 69.23%           | 79.12%           | 87.25%   | 77.80%   | 82.42%    |
 
+### Accuracy without pt (100 epochs)
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 100%    | 99.86%        | 99.77%        | 100%             | 100%             | 100%     | 100%     | 100%      |
+| drone-classification | 98.8%   | 93.46%        | 94.44%        | 95.20%           | 92.80%           | 97.60%   | 90.73%   | 88.11%    |
+| four-class           | 98.02%  | 87.03%        | 86.59%        | 84.62%           | 85.05%           | 91.21%   | 83.96%   | 86.37%    |
 
 ### Runtime (in second)
 
