@@ -223,6 +223,32 @@ tested on `Intel i5-11400`
 
 ![four-class_gradCAM](readme_res/without-pt-100/four-class_gradCAM.png)
 
+#### Simulation Data
+
+##### with pt 20 epochs
+binary
+
+![four-class_gradCAM](readme_res/with-pt/simu/binary_gradCAM.png)
+four class
+
+![four-class_gradCAM](readme_res/with-pt/simu/four-class_gradCAM.png)
+
+##### without pt 20 epochs
+binary
+
+![four-class_gradCAM](readme_res/without-pt/simu/binary_gradCAM.png)
+four class
+
+![four-class_gradCAM](readme_res/without-pt/simu/four-class_gradCAM.png)
+
+##### without pt 100 epochs
+binary
+
+![four-class_gradCAM](readme_res/without-pt-100/simu/binary_gradCAM.png)
+four class
+
+![four-class_gradCAM](readme_res/without-pt-100/simu/four-class_gradCAM.png)
+
 ## Environment
 
 This project requires the Python3 environment with the following libraries:
