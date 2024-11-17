@@ -129,6 +129,32 @@ drone
 | Binary     | 50%     | 67%           | 69%           | 52%              | 34%              | 18%      | 45%      | 32%             |
 | Four-class | 21%     | 30%           | 25%           | 39%              | 21%              | 20%      | 21%      | 21%             |
 
+### Accuracy with pt (100 epochs)
+
+#### Real dataset
+
+| task                 | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50 |
+| -------------------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------- |
+| binary               | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%      |
+| drone-classification | 98.26%  | 99.89%        | 99.56%        | 99.35%           | 99.35%           | 96.84%   | 96.84%   | 98.69%    |
+| four-class           | 94.29%  | 95.16%        | 98.02%        | 99.34%           | 98.68%           | 94.73%   | 99.34%   | 93.63%    |
+
+#### Simulated dataset
+
+bird
+
+| Task       | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| binary     | 100%    | 100%          | 98%           | 99%              | 100%             | 97%      | 78%      | 100%            |
+| four-class | 81%     | 78%           | 28%           | 55%              | 43%              | 58%      | 29%      | 48%             |
+
+drone
+
+| Task       | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ---------- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| binary     | 86%     | 51%           | 68%           | 46%              | 3%               | 83%      | 50%      | 62%             |
+| four-class | 73%     | 84%           | 79%           | 62%              | 78%              | 45%      | 85%      | 91%             |
+
 ### Accuracy without pt (100 epochs)
 
 #### Real dataset
