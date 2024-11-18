@@ -1,3 +1,4 @@
+logs/
 bash/
 *.txt
 __pycache__/
