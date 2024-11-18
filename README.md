@@ -45,19 +45,7 @@ git clone https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project.git
 
 ### Download weights and logs I trained
 
-for those pretrained weights, I share them via [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage), they are in `./logs` folder, where `pt` refers to initialized with ImageNet pretrained weights during training, `no_pt` refers to initialized from scratch. the number followed `pt` or `no_pt` indicate the computational budget.
-
-if you want to download the weights I've already trained:
-
-- for download a single file or all files in a path:
-  ```bash
-  git lfs pull --include="logs/logs_no_pt_20"
-  ```
-
-- for download all files
-  ```bash
-  git lfs pull
-  ```
+for those pretrained weights, I share them via this [link](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/Eb2NSTewhQ9Pte9luOaCnI0B533wf2nwTIaNmVVVst9vQw?e=xNmSIG), they are in `./logs` folder, where `pt` refers to initialized with ImageNet pretrained weights during training, `no_pt` refers to initialized from scratch. the number followed `pt` or `no_pt` indicate the computational budget.
 
 ### Train
 
