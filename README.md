@@ -217,6 +217,10 @@ tested on `Intel i5-11400`
 
 ![binary_gradCAM](readme_res/without-pt/binary_gradCAM.png)
 
+##### with pt 100 epochs
+
+![binary_gradCAM](readme_res/with-pt-100/binary_gradCAM.png)
+
 ##### without pt 100 epochs
 
 ![binary_gradCAM](readme_res/without-pt-100/binary_gradCAM.png)
@@ -231,6 +235,10 @@ tested on `Intel i5-11400`
 
 ![drone-classification_gradCAM](readme_res/without-pt/drone-classification_gradCAM.png)
 
+##### with pt 100 epochs
+
+![drone-classification_gradCAM](readme_res/with-pt-100/drone-classification_gradCAM.png)
+
 ##### without pt 100 epochs
 
 ![drone-classification_gradCAM](readme_res/without-pt-100/drone-classification_gradCAM.png)
@@ -244,6 +252,10 @@ tested on `Intel i5-11400`
 ##### without pt 20 epochs
 
 ![four-class_gradCAM](readme_res/without-pt/four-class_gradCAM.png)
+
+##### with pt 100 epochs
+
+![four-class_gradCAM](readme_res/with-pt-100/four-class_gradCAM.png)
 
 ##### without pt 100 epochs
 
@@ -267,7 +279,18 @@ four class
 
 ![four-class_gradCAM](readme_res/without-pt/simu/four-class_gradCAM.png)
 
+##### with pt 100 epochs
+
+binary
+
+![four-class_gradCAM](readme_res/with-pt-100/simu/binary_gradCAM.png)
+
+four class
+
+![four-class_gradCAM](readme_res/with-pt-100/simu/four-class_gradCAM.png)
+
 ##### without pt 100 epochs
+
 binary
 
 ![four-class_gradCAM](readme_res/without-pt-100/simu/binary_gradCAM.png)
