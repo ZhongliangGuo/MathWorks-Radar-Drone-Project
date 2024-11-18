@@ -181,6 +181,40 @@ drone
 | binary     | 68%     | 70%           | 92%           | 65%              | 87%              | 22%      | 21%      | 52%       |
 | four-class | 23%     | 24%           | 17%           | 42%              | 51%              | 36%      | 16%      | 18%       |
 
+### Train with simulated data
+
+#### without pt 100
+
+on simulated data
+
+| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+| drone | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+
+transferability on real data
+
+| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 6%      | 67%           | 66%           | 19%              | 51%              | 2%       | 35%      | 33%             |
+| drone | 98%     | 38%           | 41%           | 95%              | 88%              | 100%     | 63%      | 80%             |
+
+#### with pt 100
+
+on simulated data
+
+| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+| drone | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+
+transferability on real data
+
+| Model | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 33%     | 15%           | 0%            | 13%              | 2%               | 0%       | 0%       | 0%              |
+| drone | 100%    | 99%           | 100%          | 93%              | 100%             | 100%     | 100%     | 100%            |
+
 ### Runtime (in second)
 
 OS: `Ubuntu 22.04.4 LTS`
@@ -297,6 +331,16 @@ binary
 four class
 
 ![four-class_gradCAM](readme_res/without-pt-100/simu/four-class_gradCAM.png)
+
+#### Models trained on simulated data
+
+##### with pt 100
+
+![four-class_gradCAM](readme_res/train-on-simu/with-pt-100/binary_gradCAM.png)
+
+##### without pt 100
+
+![four-class_gradCAM](readme_res/train-on-simu/without-pt-100/binary_gradCAM.png)
 
 ## Environment
 
