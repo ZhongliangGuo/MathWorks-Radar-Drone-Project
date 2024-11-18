@@ -23,6 +23,42 @@ It can achieve different tasks:
 ## Usage
 You can run the python script in MATLAB by the [instruction](https://ch.mathworks.com/products/matlab/matlab-and-python.html).
 
+### Clone the repository
+
+change the directory to the path you prefer to save the repository:
+
+```bash
+cd "/destination-path"
+```
+
+if you prefer to use ssh:
+
+```bash
+git clone git@github.com:ZhongliangGuo/MathWorks-Radar-Drone-Project.git
+```
+
+or if you prefer to use https:
+
+```bash
+git clone https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project.git
+```
+
+### Download weights and logs I trained
+
+for those pretrained weights, I share them via [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage), they are in `./logs` folder, where `pt` refers to initialized with ImageNet pretrained weights during training, `no_pt` refers to initialized from scratch. the number followed `pt` or `no_pt` indicate the computational budget.
+
+if you want to download the weights I've already trained:
+
+- for download a single file or all files in a path:
+  ```bash
+  git lfs pull --include="logs/logs_no_pt_20"
+  ```
+
+- for download all files
+  ```bash
+  git lfs pull
+  ```
+
 ### Train
 
 a simple usage for training a neural networks.
@@ -67,7 +103,7 @@ python inference.py \
 ```
 ## Dataset
 
-Download the dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/ESk5d0jrmJxGlAtqbLXO8qEBgh2hf76TyW7dhaOfu81kFw?e=iVo9Ex). The password is `mathworks2024`.
+Download the dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/EcLj3jjzDflNm8jMx-sZuvQBNjibb2YBSbdIOzY7I8c7hA?e=4w5gfU). The password is `Sa94?+NuV<2`.
 
 ## Results
 
