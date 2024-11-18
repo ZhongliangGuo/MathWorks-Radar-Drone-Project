@@ -183,22 +183,6 @@ drone
 
 ### Train with simulated data
 
-#### without pt 100
-
-on simulated data
-
-| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
-| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
-| bird  | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
-| drone | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
-
-transferability on real data
-
-| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
-| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
-| bird  | 6%      | 67%           | 66%           | 19%              | 51%              | 2%       | 35%      | 33%             |
-| drone | 98%     | 38%           | 41%           | 95%              | 88%              | 100%     | 63%      | 80%             |
-
 #### with pt 100
 
 on simulated data
@@ -214,6 +198,22 @@ transferability on real data
 | ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
 | bird  | 33%     | 15%           | 0%            | 13%              | 2%               | 0%       | 0%       | 0%              |
 | drone | 100%    | 99%           | 100%          | 93%              | 100%             | 100%     | 100%     | 100%            |
+
+#### without pt 100
+
+on simulated data
+
+| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+| drone | 100%    | 100%          | 100%          | 100%             | 100%             | 100%     | 100%     | 100%            |
+
+transferability on real data
+
+| class | AlexNet | ConvNeXt-base | ConvNeXt-tiny | EfficientNetV2-m | EfficientNetV2-s | ResNet18 | ResNet50 | ResNeXt50_32x4d |
+| ----- | ------- | ------------- | ------------- | ---------------- | ---------------- | -------- | -------- | --------------- |
+| bird  | 6%      | 67%           | 66%           | 19%              | 51%              | 2%       | 35%      | 33%             |
+| drone | 98%     | 38%           | 41%           | 95%              | 88%              | 100%     | 63%      | 80%             |
 
 ### Runtime (in second)
 
