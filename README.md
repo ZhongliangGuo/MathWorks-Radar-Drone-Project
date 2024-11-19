@@ -91,7 +91,7 @@ python inference.py \
 ```
 ## Dataset
 
-Download the dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/EcLj3jjzDflNm8jMx-sZuvQBNjibb2YBSbdIOzY7I8c7hA?e=4w5gfU). The password is `Sa94?+NuV<2`.
+Download the image dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/EcLj3jjzDflNm8jMx-sZuvQBNjibb2YBSbdIOzY7I8c7hA?e=4w5gfU). We also provide a [subset](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/ET2zN2JlvAVDhgjAOKMOIpgBrdnTBOG6tv2FiNregaV7aA?e=qh3wdL) for the raw radar data, which covers various drones and birds. The password is `Sa94?+NuV<2`.
 
 ## Results
 
