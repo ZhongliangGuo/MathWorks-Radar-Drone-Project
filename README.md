@@ -1,5 +1,5 @@
 # MathWorks Radar Drone Classification Project
-This project is for MathWorks-St Andrews Radar Drone Classification Project, implemented by [Zhongliang Guo](mailto:zg34@st-andrews.ac.uk).
+This project is for MathWorks-St Andrews Radar Drone Classification Project, implemented by [Zhongliang Guo](mailto:zg34@st-andrews.ac.uk), the project report is available [here](https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project/blob/main/readme_res/report.pdf).
 
 This project supports a series of advanced neural networks, including:
 ```python
