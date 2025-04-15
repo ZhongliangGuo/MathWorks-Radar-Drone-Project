@@ -45,7 +45,7 @@ git clone https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project.git
 
 ### Download weights and logs I trained
 
-for those pretrained weights, I share them via this [link](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/Eb2NSTewhQ9Pte9luOaCnI0B533wf2nwTIaNmVVVst9vQw?e=xNmSIG), they are in `./logs` folder, where `pt` refers to initialized with ImageNet pretrained weights during training, `no_pt` refers to initialized from scratch. the number followed `pt` or `no_pt` indicate the computational budget.
+for those pretrained weights, I share them via this [link](https://zenodo.org/records/15224878), they are in `./logs` folder, where `pt` refers to initialized with ImageNet pretrained weights during training, `no_pt` refers to initialized from scratch. the number followed `pt` or `no_pt` indicate the computational budget.
 
 ### Train
 
@@ -91,7 +91,7 @@ python inference.py \
 ```
 ## Dataset
 
-Download the image dataset by clicking [here](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/EcLj3jjzDflNm8jMx-sZuvQBNjibb2YBSbdIOzY7I8c7hA?e=4w5gfU). We also provide a [subset](https://universityofstandrews907-my.sharepoint.com/:u:/g/personal/zg34_st-andrews_ac_uk/ET2zN2JlvAVDhgjAOKMOIpgBrdnTBOG6tv2FiNregaV7aA?e=qh3wdL) for the raw radar data, which covers various drones and birds. The password is `Sa94?+NuV<2`.
+Download the image dataset by clicking [here](https://zenodo.org/records/15224888). We also provide a subset for the raw radar data, which covers various drones and birds. The password is `Sa94?+NuV<2`.
 
 ## Results
 
