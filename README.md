@@ -1,11 +1,12 @@
 # MathWorks Radar Drone Classification Project
-This repository contains the work for the MathWorks–St Andrews Radar Drone Classification Project, funded by MathWorks. The repository was carried out by [Zhongliang Guo](https://robust-ai.me/), with [Duncan A. Robertson](https://scholar.google.com/citations?user=T0MqToAAAAAJ) and [Samiur Rahman](https://scholar.google.com/citations?user=5946qVsAAAAJ) of the University of St Andrews involved throughout, contributing the radar systems and domain expertise.
 
-The repository covers the full pipeline from raw radar measurements to a deployable classifier: collection and preparation of the drone and bird data, ground-truth labelling, generation of RTI and micro-Doppler spectrograms, and the design, training, and evaluation of the neural network. The trained models have been packaged into a ready-to-use MATLAB toolbox, so the classifier can be run out of the box within MATLAB.
+This repository hosts the work for the **MathWorks–St Andrews Radar Drone Classification Project**, funded by MathWorks. The work was carried out by [Zhongliang Guo](https://robust-ai.me/), with [Duncan A. Robertson](https://scholar.google.com/citations?user=T0MqToAAAAAJ) and [Samiur Rahman](https://scholar.google.com/citations?user=5946qVsAAAAJ) of the University of St Andrews involved throughout and contributing the radar systems and domain expertise.
+
+The repository covers the full pipeline from raw radar measurements to a deployable classifier: collection and preparation of the drone and bird data, ground-truth labelling, generation of RTI and micro-Doppler spectrograms, and the design, training, and evaluation of the neural networks. The trained models have been packaged into a ready-to-use MATLAB toolbox, so the classifier can be run out of the box within MATLAB.
 
 The project report is available [here](https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project/blob/main/readme_res/report.pdf).
 
-Algorithms and functions developed in this repository have been integrated into MATLAB R2026b (Radar Toolbox), where a subset of the data will be featured as an official example hosted on mathworks.com. The integration was carried out in collaboration with the MathWorks Radar Toolbox team, including [Vincent Pellissier](https://www.linkedin.com/in/vincentpellissier/), [Roberto Valenti](https://robertogl.github.io/), [Sara James](https://www.linkedin.com/in/sara-james-889b935b/), and [Spencer Markowitz](https://www.linkedin.com/in/samarkowitz/).
+Algorithms and functions developed in this repository have been integrated into **MATLAB R2026b** (Radar Toolbox), where a subset of the data is featured as an official example hosted on mathworks.com. The integration was carried out together with the MathWorks Radar Toolbox team, including [Vincent Pellissier](https://www.linkedin.com/in/vincentpellissier/), [Roberto Valenti](https://robertogl.github.io/), [Sara James](https://www.linkedin.com/in/sara-james-889b935b/), and [Spencer Markowitz](https://www.linkedin.com/in/samarkowitz/).
 
 This project supports a series of advanced neural networks, including:
 ```python
@@ -107,7 +108,8 @@ trained on the machine with
 - GPU: `NVIDIA A100-SXM4-80GB`
 - CPU: `AMD EPYC 7713 64-Core Processor`
 
-### Accuracy with pt (20 epochs)
+<details>
+<summary><b>Accuracy with pt (20 epochs)</b></summary>
 
 #### Real dataset
 
@@ -133,7 +135,10 @@ drone
 | binary     | 81%     | 47%           | 73%           | 38%              | 5%               | 88%      | 59%      | 75%       |
 | four-class | 73%     | 92%           | 77%           | 78%              | 84%              | 45%      | 84%      | 91%       |
 
-### Accuracy without pt (20 epochs)
+</details>
+
+<details>
+<summary><b>Accuracy without pt (20 epochs)</b></summary>
 
 #### Real dataset
 
@@ -159,7 +164,10 @@ drone
 | Binary     | 50%     | 67%           | 69%           | 52%              | 34%              | 18%      | 45%      | 32%             |
 | Four-class | 21%     | 30%           | 25%           | 39%              | 21%              | 20%      | 21%      | 21%             |
 
-### Accuracy with pt (100 epochs)
+</details>
+
+<details>
+<summary><b>Accuracy with pt (100 epochs)</b></summary>
 
 #### Real dataset
 
@@ -185,7 +193,10 @@ drone
 | binary     | 86%     | 51%           | 68%           | 46%              | 3%               | 83%      | 50%      | 62%             |
 | four-class | 73%     | 84%           | 79%           | 62%              | 78%              | 45%      | 85%      | 91%             |
 
-### Accuracy without pt (100 epochs)
+</details>
+
+<details>
+<summary><b>Accuracy without pt (100 epochs)</b></summary>
 
 #### Real dataset
 
@@ -211,7 +222,10 @@ drone
 | binary     | 68%     | 70%           | 92%           | 65%              | 87%              | 22%      | 21%      | 52%       |
 | four-class | 23%     | 24%           | 17%           | 42%              | 51%              | 36%      | 16%      | 18%       |
 
-### Train with simulated data
+</details>
+
+<details>
+<summary><b>Train with simulated data</b></summary>
 
 #### with pt 100
 
@@ -245,7 +259,10 @@ transferability on real data
 | bird  | 6%      | 67%           | 66%           | 19%              | 51%              | 2%       | 35%      | 33%             |
 | drone | 98%     | 38%           | 41%           | 95%              | 88%              | 100%     | 63%      | 80%             |
 
-### Runtime (in second)
+</details>
+
+<details>
+<summary><b>Runtime (in second)</b></summary>
 
 OS: `Ubuntu 22.04.4 LTS`
 
@@ -269,7 +286,10 @@ tested on `Intel i5-11400`
 | drone-classification | 0.0164  | 0.1227        | 0.0443        | 0.0889           | 0.0525           | 0.0220   | 0.0459   | 0.0490    |
 | four-class           | 0.0155  | 0.1139        | 0.0441        | 0.0864           | 0.0530           | 0.0204   | 0.0441   | 0.0486    |
 
-### Grad-CAM Visualization
+</details>
+
+<details>
+<summary><b>Grad-CAM Visualization</b></summary>
 
 #### binary
 
@@ -372,6 +392,8 @@ four class
 
 ![four-class_gradCAM](readme_res/train-on-simu/without-pt-100/binary_gradCAM.png)
 
+</details>
+
 ## Environment
 
 This project requires the Python3 environment with the following libraries:
@@ -387,9 +409,18 @@ The docker image that contains the environment I used for this project is availa
 
 ## Reference
 
-1. Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[J]. Advances in neural information processing systems, 2012, 25.
-2. He K, Zhang X, Ren S, et al. Deep residual learning for image recognition[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 770-778.
-3. Xie S, Girshick R, Dollár P, et al. Aggregated residual transformations for deep neural networks[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2017: 1492-1500.
-4. Tan M, Le Q. Efficientnet: Rethinking model scaling for convolutional neural networks[C]//International conference on machine learning. PMLR, 2019: 6105-6114.
-5. Liu Z, Mao H, Wu C Y, et al. A convnet for the 2020s[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2022: 11976-11986.
+### Radar systems and data
+
+1. Rahman, Samiur, and Duncan A. Robertson. "Coherent 24 GHz FMCW radar system for micro-Doppler studies." In *Radar Sensor Technology XXII*, vol. 10633, pp. 154-162. SPIE, 2018.
+2. Robertson, Duncan A., Graham M. Brooker, and Patrick D. L. Beasley. "Very low-phase noise, coherent 94 GHz radar for micro-Doppler and vibrometry studies." In *Radar Sensor Technology XVIII*, vol. 9077. SPIE, 2014.
+3. Vattulainen, Aleksanteri B., Samiur Rahman, and Duncan A. Robertson. "G-band FMCW Doppler radar for close-range environmental sensing." *IEEE Transactions on Radar Systems* 2 (2024): 355-371.
+4. Blacknell, David, and Hugh Griffiths. *Radar Automatic Target Recognition (ATR) and Non-Cooperative Target Recognition (NCTR)*. No. 11300. IET, 2013.
+
+### Neural network architectures
+
+5. Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[J]. Advances in neural information processing systems, 2012, 25.
+6. He K, Zhang X, Ren S, et al. Deep residual learning for image recognition[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 770-778.
+7. Xie S, Girshick R, Dollár P, et al. Aggregated residual transformations for deep neural networks[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2017: 1492-1500.
+8. Tan M, Le Q. Efficientnet: Rethinking model scaling for convolutional neural networks[C]//International conference on machine learning. PMLR, 2019: 6105-6114.
+9. Liu Z, Mao H, Wu C Y, et al. A convnet for the 2020s[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2022: 11976-11986.
 
