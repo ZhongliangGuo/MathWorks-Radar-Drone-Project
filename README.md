@@ -1,6 +1,6 @@
 # MathWorks Radar Drone Classification Project
 
-This repository hosts the work for the **MathWorks–St Andrews Radar Drone Classification Project**, funded by MathWorks. The work was carried out by [Zhongliang Guo](https://robust-ai.me/), with [Duncan A. Robertson](https://scholar.google.com/citations?user=T0MqToAAAAAJ) and [Samiur Rahman](https://scholar.google.com/citations?user=5946qVsAAAAJ) of the University of St Andrews involved throughout and contributing the radar systems and domain expertise.
+This repository hosts the work for the **MathWorks–St Andrews Radar Drone Classification Project**, funded by MathWorks. The work was carried out by [Zhongliang Guo](https://robust-ai.me/) (School of Computer Science, University of St Andrews), with [Duncan A. Robertson](https://scholar.google.com/citations?user=T0MqToAAAAAJ) and [Samiur Rahman](https://scholar.google.com/citations?user=5946qVsAAAAJ) (School of Physics and Astronomy, University of St Andrews) involved throughout and contributing the radar systems and domain expertise.
 
 The repository covers the full pipeline from raw radar measurements to a deployable classifier: collection and preparation of the drone and bird data, ground-truth labelling, generation of RTI and micro-Doppler spectrograms, and the design, training, and evaluation of the neural networks. The trained models have been packaged into a ready-to-use MATLAB toolbox, so the classifier can be run out of the box within MATLAB.
 
@@ -418,9 +418,9 @@ The docker image that contains the environment I used for this project is availa
 
 ### Neural network architectures
 
-5. Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[J]. Advances in neural information processing systems, 2012, 25.
-6. He K, Zhang X, Ren S, et al. Deep residual learning for image recognition[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 770-778.
-7. Xie S, Girshick R, Dollár P, et al. Aggregated residual transformations for deep neural networks[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2017: 1492-1500.
-8. Tan M, Le Q. Efficientnet: Rethinking model scaling for convolutional neural networks[C]//International conference on machine learning. PMLR, 2019: 6105-6114.
-9. Liu Z, Mao H, Wu C Y, et al. A convnet for the 2020s[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2022: 11976-11986.
+5. Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "ImageNet classification with deep convolutional neural networks." *Advances in Neural Information Processing Systems* 25 (2012).
+6. He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep residual learning for image recognition." In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, pp. 770-778. 2016.
+7. Xie, Saining, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He. "Aggregated residual transformations for deep neural networks." In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, pp. 1492-1500. 2017.
+8. Tan, Mingxing, and Quoc Le. "EfficientNet: Rethinking model scaling for convolutional neural networks." In *International Conference on Machine Learning*, pp. 6105-6114. PMLR, 2019.
+9. Liu, Zhuang, Hanzi Mao, Chao-Yuan Wu, Christoph Feichtenhofer, Trevor Darrell, and Saining Xie. "A ConvNet for the 2020s." In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, pp. 11976-11986. 2022.
 
