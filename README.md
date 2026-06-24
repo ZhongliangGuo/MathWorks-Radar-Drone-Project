@@ -1,6 +1,4 @@
 # MathWorks Radar Drone Classification Project
-This project is for MathWorks-St Andrews Radar Drone Classification Project (funded by MathWorks), researched and implemented by [Zhongliang Guo](https://robust-ai.me/), the project report is available [here](https://github.com/ZhongliangGuo/MathWorks-Radar-Drone-Project/blob/main/readme_res/report.pdf). Some algorithms and functions in this repository have been integrated into MATLAB R2026b.
-
 This repository contains the work for the MathWorks–St Andrews Radar Drone Classification Project, funded by MathWorks. The repository was carried out by [Zhongliang Guo](https://robust-ai.me/), with [Duncan A. Robertson](https://scholar.google.com/citations?user=T0MqToAAAAAJ) and [Samiur Rahman](https://scholar.google.com/citations?user=5946qVsAAAAJ) of the University of St Andrews involved throughout, contributing the radar systems and domain expertise.
 
 The repository covers the full pipeline from raw radar measurements to a deployable classifier: collection and preparation of the drone and bird data, ground-truth labelling, generation of RTI and micro-Doppler spectrograms, and the design, training, and evaluation of the neural network. The trained models have been packaged into a ready-to-use MATLAB toolbox, so the classifier can be run out of the box within MATLAB.
